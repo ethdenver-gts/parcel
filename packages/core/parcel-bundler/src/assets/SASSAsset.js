@@ -10,6 +10,7 @@ class SASSAsset extends Asset {
   constructor(name, options) {
     super(name, options);
     this.type = 'css';
+    this.hmrPageReload = true;
   }
 
   async parse(code) {
